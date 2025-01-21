@@ -1,15 +1,14 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-// import todoRouter from "./todoRouter";
-// import productsRouter from "./productsRouter";
+
 import memberRouter from "./memberRouter";
 
 const Loading = <div>Loading....</div>;
 const Main = lazy(() => import("../pages/MainPage"));
-// const About = lazy(() => import("../pages/AboutPage"));
-// const TodoIndex = lazy(() => import("../pages/todo/IndexPage"));
-// const TodoList = lazy(() => import("../pages/todo/ListPage"));
-// const ProductsRouter = lazy(() => import("../pages/products/IndexPage"));
+const Mypay = lazy(() => import("../pages/MypayPage"));
+const DebtCollection = lazy(() => import("../pages/DebtCollection"));
+const Qna = lazy(() => import("../pages/QnaPage"));
+const Loan = lazy(() => import("../pages/LoanPage"));
 
 const root = createBrowserRouter([
   {
@@ -20,32 +19,38 @@ const root = createBrowserRouter([
       </Suspense>
     ),
   },
-  //   {
-  //     path: "/about",
-  //     element: (
-  //       <Suspense fallback={Loading}>
-  //         <About />
-  //       </Suspense>
-  //     ),
-  //   },
-  //   {
-  //     path: "/todo",
-  //     element: (
-  //       <Suspense fallback={Loading}>
-  //         <TodoIndex />
-  //       </Suspense>
-  //     ),
-  //     children: todoRouter(),
-  //   },
-  //   {
-  //     path: "products",
-  //     element: (
-  //       <Suspense fallback={Loading}>
-  //         <ProductsRouter />
-  //       </Suspense>
-  //     ),
-  //     children: productsRouter(),
-  //   },
+  {
+    path: "/mypay",
+    element: (
+      <Suspense fallback={Loading}>
+        <Mypay />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/loan",
+    element: (
+      <Suspense fallback={Loading}>
+        <Loan />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/debtCollection",
+    element: (
+      <Suspense fallback={Loading}>
+        <DebtCollection />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/qna",
+    element: (
+      <Suspense fallback={Loading}>
+        <Qna />
+      </Suspense>
+    ),
+  },
   {
     path: "member",
     children: memberRouter(),
