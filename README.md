@@ -3,7 +3,7 @@ RESTful API, Spring Boot, React, Python, AWS 를 활용한 두번째 풀스택 �
 
 ## 프로젝트 소개
 개인 간 대출 진행 및 계약 수수료를 기부하는 금융 프로젝트
-
+<details>
 ## 협업 멤버
 <table>
   <tr>
@@ -195,7 +195,7 @@ RESTful API, Spring Boot, React, Python, AWS 를 활용한 두번째 풀스택 �
   ![image](https://github.com/user-attachments/assets/e24897ac-c956-4d51-a7aa-eddf39eee345)
   ![image](https://github.com/user-attachments/assets/f0e0dc7a-3803-4927-ac30-5b91055f027f)
 
-
+</details>
 
 
   
