@@ -205,7 +205,13 @@ RESTful API, Spring Boot, React, Python, AWS 를 활용한 두번째 풀스택 �
   
 
 
+## 日本語
 
+#### 韓国のロトの場合 1 ～ 45 までの番号中 6 個選ぶ
+
+<details>
+    <summary><strong style="font-size:28px;"> -機能説明</strong></summary>
+    </details>
 
 
 
